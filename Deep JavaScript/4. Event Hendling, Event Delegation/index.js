@@ -4,13 +4,17 @@
  * Web իրադարձությունը աշխատում է browser-ի պատուհանի ներսում և սովորաբար կցվում կոնկրետ HTML էլեմենտին։
  * @Օրինակ ` @MouseEvent @KeyboardEvents @DOMContentLoaded @CSSEvents @Clik @Error ...
  * 
+ * @JS և @HTML իրար հետ շփվում են event-ի միջոցով։ Event-ը հաղորդում է JS-ին որ մեր document(bowser)-ում ինչ-որ բան փոփոխվել է։
+ * Ոչպիսզի "որսանք" կամ "մշակենք" այդ event-ը մեզ անհրաժեշտ են @listeners @handler
+ * 
  * @Event_Handler Դա կոդի բլոկ է(function), որը աշխատելու է այն ժամանակ երբ իրադարձություն տեղի կունենա: Շնորհիվ @Event_Handler -ի
  * JavaScript կոդը կարող է արձագանքել օգտվողի գործողություններին: @RegisterEventHandler @EventListeners - Հետևում է փոփոխություններին։
  * 
- * Web էջերի համար JavaScript-ի իրադարձությունների մոդելը տարբերվում է պարզ JavaScript-ի իրադարձությունների մոդելից, 
+ * Web էջերի համար JavaScript-ի իրադարձությունների մոդելը տարբերվում է սերվերում աշխատող JavaScript-ի իրադարձությունների մոդելից, 
  * քանի որ դրանք օգտագործվում են տարբեր միջավայրերում, օրինակ Node.js @EventEmitter @ErrorEvents ...
  * 
  * @Event -նները JavaScript-ի հիմնական մաս չեն, դրանք որոշվում են browser-ի վեբ ինտերֆեյսներում(Web API, WebExtensions կամ Node)
+ * 
  */ 
 
 /**
@@ -140,3 +144,14 @@
  * Ամենա խորը էլեմենտը, որի վրա տեղի է ունեցել event-ը անվանում են՝ @event.target և նա հասնաելի է event.target միջոցով։
  * @this = event.currentTarget
 */
+
+/**
+ * @Event_Delegation Երբ կան շատ էլեմենտներ որոնց մշակման պրոցեսը շատ նման է և մեր handler-ը տեղադրում ենք կոնտեյների վրա։
+
+    <div id="handlerButton">
+        <button data-action="save">Save</button>
+        <button data-action="load">Load</button>
+        <button data-action="search">Search</button>
+        <button data-action="search">Check</button>
+    </div>
+ */

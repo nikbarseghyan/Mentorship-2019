@@ -24,3 +24,21 @@ const qSort = array => {
 }
 
 console.log(qSort(array));
+
+//or
+
+const _qSort = (array, left = [], right =[]) => {
+    if(!array.length && array.length < 1 ) return array
+    let middle = Math.floor(array.length / 2)
+    let pivot = array[middle]
+
+    for(let i = 0; i < array.length; i++) {
+        if(i === middle) continue
+        if(array[i] < pivot) left.push(array[i])
+        else right.push(array[i])
+    }
+    
+    return [..._qSort(left), pivot, ..._qSort(right)]
+}
+
+console.log(_qSort(array));

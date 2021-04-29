@@ -44,32 +44,36 @@
 ```sh
 .
 │   Boyer–Moore–Horspool.js
+│   Factorial.js
 │   Fibonacci.js
-│   Graph-Dijkstra.js
-│   Graph-FindingCenter.js
-│   Graph-Floyd–Warshall.js
-│   Graph-Kruskal.js
-│   Graph-Prima.js
 │   Knuth–Morris–Pratt.js
 │   Max-Min.js
+│   Memoization.js
 │   Polindrom.js
-│   README.md
 │   Search-Binary.js
+│   Search-Linear.js
 │   Sort-Bubble.js
 │   Sort-Insertion.js
 │   Sort-Merge.js
 │   Sort-Odd_Even.js
 │   Sort-Quick.js
 │   Sort-Selection.js
+│   README.md
 │
 └───Big O Notation
-        README.md
+    │   README.md
+    │
+    └───assets
 ```
 <h6>Data structure</h6>
 
 ```sh
 .
 │   Array.js
+│   Graph-Dijkstra.js
+│   Graph-Floyd–Warshall.js
+│   Graph-Kruskal.js
+│   Graph-Prima.js
 │   Graph.js
 │   Hash_Table.js
 │   Linked_List.js
@@ -79,8 +83,9 @@
 │   Set.js
 │   Stack.js
 │   Tree.js
+│   README.md
 │
-└───README.md
+└───assets
 
 ```
 <h6>OOP</h6>
@@ -129,7 +134,13 @@
 <h6>Database Paradigms </h6>
 
 ```sh
-.   Private
+.
+│   0.Database.md
+│   ACID.mds
+│   NoSQL.md
+│   OLAP.md
+│   OLTP.md
+│   SQL.md
 │
 └───README.md
 
@@ -159,80 +170,45 @@
    
 ```sh
 .
-│   README.md
-│
-├───0. Data Types
-│       index.js
-│
-├───1. Hoisting
-│       index.js
-│       
-├───10. Fetch, XHR, Ajax
-│       index.js
-│
-├───11. LocalStorage, SessionStorage, Cookie
-│       index.js
-│
-├───12. Map, Set, WeakMap, WeakSet
-│       index.js
-│
-├───13. RegExp, Math, Date, Proxy
-│       index.js
-│
-├───14. Spread, Rest, Destructuring Assignment
-│       index.js
-│       
-├───2. Array Methods
-│       index.js
-│       method.js
-│
-├───3. Object
-│       index.js
-│
-├───4. Function, Generators Function
-│       index.js
-│
-├───5. Class
-│       index.js
-│
+├───1. Types
+├───2. Hoisting
+├───3. DOM, BOM, CSSOM
+├───4. Event Hendling, Event Delegation
+├───4.1. Error Hendling
+├───5. Translator Compliator Interpretator
 ├───6. Prototype, Context. call, bind, apply
-│   │   index.html
-│   │   index.js
-│   │   prototype.js
-│   │
-│   └───Context. call, bind, apply
-│           index.js
-│
-├───7. Promise
-│       index.js
-│
-├───8. Async, Await
-│       index.js
-│
-└───9. Asynchronous, Event Loop
-        index.js
+│   └───Context. this, new, call, bind, apply
+├───7. Array Methods
+├───8. Object
+├───8.1 RegExp, Math, Date, Proxy, Reflect
+├───9. Function, Generators Function
+├───10. Promise
+├───10.1 Async, Await
+├───11. Class
+├───11.1 Mixin
+├───12. Asynchronous, Event Loop
+├───12.1. Microtask Macrotask
+├───13. Fetch, XHR, Ajax
+├───14. Cookie, Web Storage
+├───15. Map, Set, WeakMap, WeakSet
+├───16. Spread, Rest, Destructuring Assignment
+├───17. Web Worker, Race condition
+├───18. Intersection Observer API
+├───19. TBD
+└───19.1 Git-flow
 
 ```
 <h6>Software Architecture</h6>
 
 ```sh
 .
-│   README.md
-│   
 ├───CQRS
-│       README.md
-│       
-├───DDD
-│       README.md
-│       
+├───Flux
 ├───Microservices
-│       README.md
-│
 ├───MVC
-│       README.md
-│
 └───REST
-        README.md
+│
+└───README.md
 ```
 
 
@@ -245,95 +221,37 @@
    
 ```sh
 .
-│   README.md
-│
 ├───Antipattern
-│   │   README.md
-│   │
 │   ├───God of Object
-│   │       index.js
-│   │
 │   ├───Hard Code
-│   │       index.js
-│   │
 │   └───Spaghetti Code
-│           index.js
-│
 ├───GoF
-│   │   DP.pdf
-│   │   README.md
-│   │   
 │   ├───Abstract Factory
-│   │       index.js
-│   │
 │   ├───Adapter
-│   │       index.js
-│   │
 │   ├───Bridge
-│   │       index.js
-│   │
 │   ├───Builder
-│   │       index.js
-│   │
 │   ├───Chain of Responsibility
-│   │       index.js
-│   │
 │   ├───Command
-│   │       index.js
-│   │       
 │   ├───Composite
-│   │       index.js
-│   │
 │   ├───Decorator
-│   │       index.js
-│   │
 │   ├───Facade
-│   │       index.js
-│   │
 │   ├───Factory Method
-│   │       index.js
-│   │
 │   ├───Flyweight
-│   │       index.js
-│   │
 │   ├───Iterator
-│   │       index.js
-│   │
 │   ├───Mediator
-│   │       index.js
-│   │
 │   ├───Memento
-│   │       index.js
-│   │
 │   ├───Observer
-│   │       index.js
-│   │
 │   ├───Prototype
-│   │       index.js
-│   │
 │   ├───Proxy
-│   │       index.js
-│   │       
 │   ├───Singleton
-│   │       index.js
-│   │
 │   ├───State
-│   │       index.js
-│   │
 │   ├───Strategy
-│   │       index.js
-│   │
 │   ├───Template Method
-│   │       index.js
-│   │
 │   └───Visitor
-│           index.js
-│
 ├───GRASP
-│       README.md
-│
 └───YAGNI KISS DRY WET DIE
-        README.md
+│
+└───README.md
 
 ```
 

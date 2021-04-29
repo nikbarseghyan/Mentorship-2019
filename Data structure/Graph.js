@@ -11,9 +11,42 @@
  * 
  * @bfs (Breath-First-Search, BFS), Փնտրում դեպի լայնություն։
  * @dfs (Depth-First-Search, DFS), Փնտրում դեպի խորություն։
+ * 
+ * @Link https://hy.wikipedia.org/wiki/%D4%B3%D6%80%D5%A1%D6%86%D5%B6%D5%A5%D6%80%D5%AB_%D5%BF%D5%A5%D5%BD%D5%B8%D6%82%D5%A9%D5%B5%D5%B8%D6%82%D5%B6
  */
 
+const graph = {}
+graph.a = ['b','c']
+graph.b = ['f']
+graph.c = ['d','e']
+graph.d = ['f']
+graph.e = ['f']
+graph.f = ['g']
 
+// FIFO 
+const breadthSearch = (graph, start, end) => {
+    let queue = []
+    queue.push(start)
+
+    while( queue.length > 0 ) {
+        const current = queue.shift()
+        if(!queue[current]) graph[current] = []
+
+        if(graph[current].includes(end)) return true
+        else queue = [...queue, ...graph[current]]
+    }
+    return false
+}
+
+console.log(breadthSearch(graph, 'a', 'f'))
+
+
+/**
+ * Breath-First-Search, BFS, Փնտրում դեպի լայնություն։
+ * @param {*} graph 
+ * @param {*} root 
+ * @returns 
+ */
 function bfs(graph, root) {
     let nodesLen = {}
     for (let i = 0; i < graph.length; i++) {
@@ -42,7 +75,7 @@ function bfs(graph, root) {
     return nodesLen
 }
 
-let graph = [
+const _graph = [
     [0, 1, 1, 1, 0],
     [0, 0, 1, 0, 0],
     [1, 1, 0, 0, 0],
@@ -50,4 +83,4 @@ let graph = [
     [0, 1, 0, 0, 0]
 ];
 
-console.log(bfs(graph, 1))
+console.log(bfs(_graph, 1))

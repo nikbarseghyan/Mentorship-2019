@@ -22,6 +22,9 @@
  * 
  * @Microtask  process.nextTick , Promises , queueMicrotask , MutationObserver
  * @Macrotask  setTimeout , setInterval , setImmediate , requestAnimationFrame(rAF) , I/O , render UI:
+ * 
+ * Ընդարացնելով՝ @JavaScript -ը ասում է իմ @keyWord -երը ավելի առաջնային են քան միջավայրի(BOM, Libuv) կողմից տրամադրվող
+ * գործառույթնները(functions` setTimeout)
  */
 
 console.log('stack [1]');

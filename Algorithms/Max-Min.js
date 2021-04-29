@@ -24,3 +24,10 @@ const funcMin = array => {
 }
 
 console.log(funcMax(array), funcMin(array))
+
+// or Elegant
+
+const _max = array => Math.max(...array)
+const _min = array => Math.min(...array)
+
+console.log(_max(array), _min(array));
